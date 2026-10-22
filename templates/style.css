@@ -1,0 +1,19 @@
+/**
+ * 入口样式模板 —— 复制为 src/style.css
+ *
+ * 规范第 1 节：除 @import 与全局隐藏滚动条外，不写任何自定义 CSS。
+ */
+@import "tailwindcss";
+
+/* 隐藏滚动条（保留滚动能力）；规范里唯一允许的自定义 CSS */
+html {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* 深色模式：Tailwind v4 的 dark: 变体默认跟随 prefers-color-scheme（系统设置）。
+   若项目改为 class 策略，在这里加：
+   @custom-variant dark (&:where(.dark, .dark *));
+   注意：切换策略会导致既有 dark: 变体全部依赖 <html class="dark">，必须同步改入口脚本。 */
