@@ -13,7 +13,9 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-/* 深色模式：Tailwind v4 的 dark: 变体默认跟随 prefers-color-scheme（系统设置）。
-   若项目改为 class 策略，在这里加：
-   @custom-variant dark (&:where(.dark, .dark *));
-   注意：切换策略会导致既有 dark: 变体全部依赖 <html class="dark">，必须同步改入口脚本。 */
+/* 深色模式说明（注释统一用 * 续行，check-style.sh 才认得出是注释）：
+ * Tailwind v4 的 dark: 变体默认跟随 prefers-color-scheme（系统设置）。
+ * 若项目改为 class 策略，在这里加：
+ *   @custom-variant dark (&:where(.dark, .dark *));
+ * 注意：切换策略会导致既有 dark: 变体全部依赖 <html class="dark">，必须同步改入口脚本。
+ */
